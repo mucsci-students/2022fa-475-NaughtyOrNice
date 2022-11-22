@@ -6,16 +6,20 @@ public class VelocityScript : MonoBehaviour
     public float bulletLife = 2f;
     private float elapsedTime = 0f;
     
+	//Rigidbody rigidBody = GetComponent<Rigidbody>();
+	//GetComponent<Rigidbody>().velocity = new Vector3 (startSpeed, 0, startSpeed);
 
     void Start()
     {
         direction = Camera.main.transform.forward;
+	Rigidbody rigidBody = GetComponent<Rigidbody>();
+	GetComponent<Rigidbody>().velocity = direction * speed;
+
     }
 
     void Update()
     {
         elapsedTime += Time.deltaTime;
-        transform.position += direction * Time.deltaTime * speed;
         if (elapsedTime > bulletLife)
         {   
             Destroy (gameObject);
