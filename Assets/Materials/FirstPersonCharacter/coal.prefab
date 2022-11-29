@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 231538597254689982}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: naughty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 7935532725336683127}
   m_Layer: 0
   m_Name: coal
-  m_TagString: Untagged
+  m_TagString: naughty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
