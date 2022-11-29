@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3106747394947253097}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 93372999712154964}
   m_Layer: 0
   m_Name: box4
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae7fdeaad3c5dea4a91172a6f47b0541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
+  speed: 70
   bulletLife: 10
 --- !u!65 &-5272166342050547073
 BoxCollider:
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 8276640406794501208}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1339,7 +1339,7 @@ GameObject:
   - component: {fileID: 1464225718766999794}
   m_Layer: 0
   m_Name: Bip001
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1562,7 +1562,7 @@ GameObject:
   - component: {fileID: 1464225718778857946}
   m_Layer: 0
   m_Name: Object004 1
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1693,7 +1693,7 @@ GameObject:
   - component: {fileID: 1464225719417330193}
   m_Layer: 0
   m_Name: Object004
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1839,7 +1839,7 @@ GameObject:
   - component: {fileID: 1464225718778857944}
   m_Layer: 0
   m_Name: Object005
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2101,7 +2101,7 @@ GameObject:
   - component: {fileID: 1464225718778857936}
   m_Layer: 0
   m_Name: Cylinder013
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2187,7 +2187,7 @@ GameObject:
   - component: {fileID: 1464225718778857938}
   m_Layer: 0
   m_Name: Cylinder010
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2272,9 +2272,11 @@ GameObject:
   - component: {fileID: 1464225718766999868}
   - component: {fileID: 1464225718777306386}
   - component: {fileID: 1464225719182793968}
+  - component: {fileID: 7583212094214617728}
+  - component: {fileID: 3697398904434626001}
   m_Layer: 0
   m_Name: Nice1
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2286,9 +2288,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464225718767355164}
-  m_LocalRotation: {x: 0.16586801, y: -0.15226929, z: 0.0007500519, w: 0.97432095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 606.1936, y: 34.28455, z: 387.571}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1464225718766999794}
@@ -2300,7 +2302,7 @@ Transform:
   - {fileID: 1464225718766999846}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 18.871, y: -18.259, z: -2.971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!111 &1464225718777306386
 Animation:
   m_ObjectHideFlags: 0
@@ -2310,9 +2312,9 @@ Animation:
   m_GameObject: {fileID: 1464225718767355164}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: ba9051795f1603d488a0ea998dbacc27, type: 3}
+  m_Animation: {fileID: 7400000, guid: 83a1a7554c6f87d4ca1b10a0b635da63, type: 3}
   m_Animations:
-  - {fileID: 7400000, guid: ba9051795f1603d488a0ea998dbacc27, type: 3}
+  - {fileID: 7400000, guid: 83a1a7554c6f87d4ca1b10a0b635da63, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -2326,13 +2328,48 @@ Rigidbody:
   m_GameObject: {fileID: 1464225718767355164}
   serializedVersion: 2
   m_Mass: 5
-  m_Drag: 0
+  m_Drag: 10
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
+--- !u!114 &7583212094214617728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464225718767355164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2bdc792064c30b4daeecb92380db869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Playerpos: {fileID: 8448218860636084588, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+--- !u!195 &3697398904434626001
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464225718767355164}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 4
+  m_Acceleration: 2
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1464225718767355166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,7 +2382,7 @@ GameObject:
   - component: {fileID: 1464225718778857942}
   m_Layer: 0
   m_Name: Cylinder017
-  m_TagString: Untagged
+  m_TagString: nice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
