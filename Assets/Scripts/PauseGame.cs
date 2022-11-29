@@ -8,6 +8,11 @@ public class PauseGame : MonoBehaviour
     public static bool paused = false;
     public GameObject pauseMenu;
 
+    void Start()
+    {
+        paused = false;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -41,13 +46,13 @@ public class PauseGame : MonoBehaviour
 
     public void LoadMenu()
     {
-        SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1.0f;
-        paused = false;
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
     {
+        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 }
