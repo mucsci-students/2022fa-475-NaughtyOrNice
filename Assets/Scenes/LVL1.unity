@@ -283,11 +283,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: 428e87d475580ca458360e8c4956c12b, type: 3}
---- !u!4 &93967396 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6090850301929737223, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
-  m_PrefabInstance: {fileID: 858591634}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &176699299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1470,10 +1465,18 @@ PrefabInstance:
     - target: {fileID: -2842010494069927042, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
       propertyPath: Playerpos
       value: 
-      objectReference: {fileID: 93967396}
+      objectReference: {fileID: 8448218860969666472}
+    - target: {fileID: -2842010494069927042, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
+      propertyPath: PlayerRange
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729159975905212129, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
+      propertyPath: m_Speed
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 2729159975905212129, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
       propertyPath: m_Acceleration
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6090850301929737223, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
       propertyPath: m_RootOrder
@@ -2012,10 +2015,18 @@ PrefabInstance:
     - target: {fileID: -2842010494069927042, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
       propertyPath: Playerpos
       value: 
-      objectReference: {fileID: 93967396}
+      objectReference: {fileID: 8448218860969666472}
+    - target: {fileID: -2842010494069927042, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
+      propertyPath: PlayerRange
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729159975905212129, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
+      propertyPath: m_Speed
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 2729159975905212129, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
       propertyPath: m_Acceleration
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6090850301924695265, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
       propertyPath: m_Enabled
@@ -2486,8 +2497,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 8
-  m_Acceleration: 2
+  m_Speed: 16
+  m_Acceleration: 5
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -3185,7 +3196,11 @@ PrefabInstance:
     - target: {fileID: -2842010494069927042, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
       propertyPath: Playerpos
       value: 
-      objectReference: {fileID: 93967396}
+      objectReference: {fileID: 8448218860969666472}
+    - target: {fileID: -2842010494069927042, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
+      propertyPath: PlayerRange
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6090850301929737223, guid: 6860fbc32cd5d5048b1f28e9b5bef1eb, type: 3}
       propertyPath: m_RootOrder
       value: 12
