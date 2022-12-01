@@ -11,6 +11,7 @@ public class PlayerRUN : MonoBehaviour
     {
        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
+    
     void Update()
     {
 	float distance = Vector3.Distance(transform.position, Playerpos.transform.position);
@@ -25,7 +26,8 @@ public class PlayerRUN : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter (Collider collider) {
+    void OnTriggerEnter (Collider collider)
+    {
 		GameObject collidedWith = collider.gameObject;
         if (collidedWith.tag == gameObject.tag) {
 			count++;

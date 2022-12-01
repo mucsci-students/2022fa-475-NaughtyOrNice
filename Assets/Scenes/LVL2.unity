@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 7565ada0146f4a94b96145b2ae118e76, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1599,6 +1599,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+--- !u!114 &892187743 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7771705693457449134, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+  m_PrefabInstance: {fileID: 892187742}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &908155860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1675,6 +1686,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3141183439075039014, guid: 768b06fcbf1037a40a348e83bd7e16de, type: 3}
+      propertyPath: FPC
+      value: 
+      objectReference: {fileID: 892187743}
     - target: {fileID: 3141183439075039015, guid: 768b06fcbf1037a40a348e83bd7e16de, type: 3}
       propertyPath: m_Pivot.x
       value: 0
