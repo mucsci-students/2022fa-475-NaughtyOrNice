@@ -1,43 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject naughty;
+    public GameObject nice;
+    // Temporary reference to current scene
+    public Scene currentScene;
+    // Gets the current scene's name
+    public string sceneName;
+
     void Start()
     {
-        
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+        naughty = GameObject.FindGameObjectWithTag("naughty");
+        nice = GameObject.FindGameObjectWithTag("nice");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Future code for Level Switching
-        /*
-        if (playerScore == 3)
+        if (naughty == null && nice == null)
         {
-            if(scene == "PingLevel2" || scene == "PingLevel3")
+            if (sceneName == "LVL1")
             {
-                SceneManager.LoadScene(scene);
-                aiScore = 0;
-                playerScore = 0;
+                SceneManager.LoadScene("LVL2");
             }
-            else
+            else if (sceneName == "LVL2")
             {
-                timer.GetComponent<PingTimer>().beatGame = true;
-                timer.GetComponent<PingTimer>().WinDisplay();
-                aiScore = 0;
-                playerScore = 0;
-                Time.timeScale = 0.0f;
+                SceneManager.LoadScene("LVL3");
+            }
+            else if (sceneName == "LVL3")
+            {
+                SceneManager.LoadScene("MainMenu");
             }
         }
-        if (aiScore == 3)
-        {
-            SceneManager.LoadScene("MainMenu");
-            aiScore = 0;
-            playerScore = 0;
-        }
-        */
     }
 }
