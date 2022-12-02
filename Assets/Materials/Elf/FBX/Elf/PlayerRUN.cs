@@ -5,7 +5,7 @@ public class PlayerRUN : MonoBehaviour
     public Transform Playerpos;
     UnityEngine.AI.NavMeshAgent agent;
     public float PlayerRange = 4.0f;
-    int count = 0;
+    public int count = 0;
     float walkRadius = 6.0f;
     void Start()
     {
@@ -26,13 +26,16 @@ public class PlayerRUN : MonoBehaviour
         }
     }
 
+
+    public GameObject expl;
     void OnTriggerEnter (Collider collider)
     {
 		GameObject collidedWith = collider.gameObject;
         if (collidedWith.tag == gameObject.tag) {
-			count++;
+			count--;
         }
-        if(count > 20) {
+        if(count <= 1) {
+            Instantiate(expl, gameObject.transform.position, transform.rotation);
             Destroy (gameObject);
 			Destroy (collidedWith);
         }

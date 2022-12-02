@@ -2349,6 +2349,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Playerpos: {fileID: 8448218860636084588, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+  PlayerRange: 40
+  count: 10
+  expl: {fileID: 100000, guid: 15ca5b8fa431dc04291a79cadcd19874, type: 3}
 --- !u!195 &3697398904434626001
 NavMeshAgent:
   m_ObjectHideFlags: 0
