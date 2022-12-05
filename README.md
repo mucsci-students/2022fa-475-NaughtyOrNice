@@ -12,10 +12,10 @@ Or naughty?...
 
 
 ### Windows
-1. 
+1. Download from https://drive.google.com/file/d/1VttAclXrPZC-DnPZPZo5V9c5CqQtgqdl/view?usp=sharing and extract the executable and game data, then click and enjoy
 
 ### macOS
-1. 
+1. Download from https://drive.google.com/file/d/1NrtImFRlzJlT_CYLVojC2qfFmvLpCaw9/view?usp=share_link and extract the .app folder, then open the contents and give the executable permission to run on your machine through the terminal then security and privacy in your settings
 
 ## Controls
 W - Move Forward <br/>
