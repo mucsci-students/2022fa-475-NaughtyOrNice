@@ -27,14 +27,18 @@ public class GameManager : MonoBehaviour
             if (sceneName == "LVL1")
             {
                 SceneManager.LoadScene("LVL2");
+                naughty = GameObject.FindGameObjectWithTag("naughty");
+                nice = GameObject.FindGameObjectWithTag("nice");
             }
             else if (sceneName == "LVL2")
             {
                 SceneManager.LoadScene("LVL3");
+                naughty = GameObject.FindGameObjectWithTag("naughty");
+                nice = GameObject.FindGameObjectWithTag("nice");
             }
             else if (sceneName == "LVL3")
             {
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("final");
             }
         }
     }
