@@ -2500,6 +2500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSController
       objectReference: {fileID: 0}
+    - target: {fileID: 8448218861583193759, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 2000109650979426991, guid: 2ef194f5dcfadf942832930577b5176c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!114 &892187743 stripped
